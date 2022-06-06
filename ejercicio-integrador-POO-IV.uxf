@@ -1,0 +1,48 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>462</x><y>308</y><w>187</w><h>154</h></coordinates><panel_attributes>/Empleado/
+-
+- DNI: String
+- nombre: String
+- apellido: String
+- anioIngreso: int
+-
+/+ getSalario(): double/
++ nombreCompleto(): String
++ antiguedadEnAnios(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>341</x><y>506</y><w>209</w><h>121</h></coordinates><panel_attributes>EmpleadoAComision
+-
+- salarioMinimo: double
+- cantClientesCaptados: int
+- montoPorCliente: double
+-
++ getSalario(): double
++ getCantClientesCaptados(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>561</x><y>506</y><w>209</w><h>154</h></coordinates><panel_attributes>EmpleadoSalarioFijo
+-
+_- PORC1 : double = 0.05_
+_- PORC2 : double = 0.1_
+_- ANIO1 : int = 2_
+_- ANIO2 : int = 5_
+- sueldoBasico: double
+-
++ getSalario(): double
+- porcAdicional(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>451</y><w>110</w><h>77</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>572</x><y>451</y><w>110</w><h>77</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>418</x><y>132</y><w>264</w><h>88</h></coordinates><panel_attributes>Empresa
+-
+-
++ agregarEmpleado(Empleado): void
++ mostrarSalarios(): void
++ empleadoConMasClientes(): Empleado</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>209</y><w>110</w><h>121</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- empleados</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>165</y><w>220</w><h>440</h></coordinates><panel_attributes>lt=&lt;.
+Dependencia dada
+por el método
+'empleadoConMasClientes'</panel_attributes><additional_attributes>110;380;10;380;10;10;180;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>363</y><w>132</w><h>77</h></coordinates><panel_attributes>fg=black
+layer=1
+LocalDate
+-
+-
+_+ now(): LocalDate_
++ getYear(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>759</x><y>308</y><w>154</w><h>143</h></coordinates><panel_attributes>layer=0
+bg=yellow
+java.time
+
+group=group-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>638</x><y>385</y><w>143</w><h>33</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>264</x><y>231</y><w>110</w><h>44</h></coordinates><panel_attributes>Se omiten los 
+constructores</panel_attributes><additional_attributes></additional_attributes></element></diagram>
