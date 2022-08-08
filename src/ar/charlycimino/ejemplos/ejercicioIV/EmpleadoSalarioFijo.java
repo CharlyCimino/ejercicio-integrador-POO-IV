@@ -1,4 +1,4 @@
-package empleados;
+package ar.charlycimino.ejemplos.ejercicioIV;
 
 /**
  *
